@@ -1,0 +1,1 @@
+fork 以后在命令行输入`jekyll serve` 或 `jekyll s`就能在本地浏览器中输入`http://127.0.0.1:4000/`预览

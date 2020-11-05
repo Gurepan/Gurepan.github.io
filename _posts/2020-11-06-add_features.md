@@ -5,7 +5,7 @@ date:       2020-11-06
 author:     Gure
 catalog: true
 header-img: img/2020-11-06-add_features/post-bg-debug.png
-tags:
+tags: false
 ---
 
 现在趁吃夜宵的功夫，为我的博客增加了两个新功能：

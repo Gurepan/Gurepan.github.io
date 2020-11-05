@@ -81,6 +81,24 @@ layout: default
                 col-xs-12
                 sidebar-container
             ">
+				<!-- recommend post -->
+                {% if site.recommend-recommend %}
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+					<h5>推荐文章</h5>
+                    <div class="post-preview">
+                        {% for post in site.posts %}
+                            {% if post.recommend == true %}
+                                <a href="{{ post.url | prepend: site.baseurl }}">
+                                    <div>
+										{{ post.title }}
+									</div>
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </section>
+                {% endif %}
                 <!-- Featured Tags -->
                 {% if site.featured-tags %}
                 <section>

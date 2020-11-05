@@ -18,6 +18,16 @@ description: "这里是我的工作间，用来记录各种有趣的东西"
             {{ post.content | strip_html | truncate:200 }}
         </div>
     </a>
+	{% if post.tags %}
+	<div class="tags">
+		<span class="fa fa-tag listing-seperator"></span>
+		<span id='tag_cloud' class="tags">
+			{% for tag in post.tags %}
+			<a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}" rel="{{ tag[1].size }}">{{ tag }}</a>
+			{% endfor %}
+		</span>
+	</div>
+	{% endif %}
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>

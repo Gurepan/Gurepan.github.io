@@ -1,15 +1,14 @@
 ---
 layout:     post
-title:      为GitHub Pages增加新功能
+title:      为博客增加新功能
 date:       2020-11-06
 author:     Gure
 catalog: true
 header-img: img/2020-11-06-add_features/post-bg-debug.png
 tags:
-    - 建站
 ---
 
-现在趁吃夜宵的功夫，为GitHub Pages增加了两个新功能：
+现在趁吃夜宵的功夫，为我的博客增加了两个新功能：
 
 - 首页推荐文章
 - 首页文章标签

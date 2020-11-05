@@ -18,7 +18,7 @@ description: "这里是我的工作间，用来记录各种有趣的东西"
             {{ post.content | strip_html | truncate:200 }}
         </div>
     </a>
-	{% if post.tags.size? %}
+	{% if post.tags.size > 0 %}
 	<div class="tags">
 		<span class="fa fa-tag listing-seperator"></span>
 		<span id='tag_cloud' class="tags">

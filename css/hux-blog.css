@@ -173,6 +173,7 @@ a img:focus {
   cursor: zoom-in;
 }
 article {
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 blockquote {
